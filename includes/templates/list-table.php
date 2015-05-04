@@ -130,7 +130,12 @@
 					</th>
 
 					<!-- Categories -->
-					<th id="tags" class="manage-colum column-tags" style="" scope="col">
+					<th id="categories" class="manage-column column-categories" style="" scope="col">
+						Categories
+					</th>
+
+					<!-- Tags -->
+					<th id="tags" class="manage-column column-tags" style="" scope="col">
 						Tags
 					</th>
 
@@ -153,11 +158,138 @@
 					</th>
 				</tr>
 			</thead>
-			<tbody></tbody>
+			<tbody id="the-list">
+				<tr id="post-1" class="iedit author-self level-0 post-1 type-post status-publish format-standard hentry category-uncategorized">
+					<th class="check-column" scope="row">
+						<label class="screen-reader-text" for="cb-select-1">
+							Select Hello world!
+						</label>
+						<input id="cb-select-1" type="checkbox" value="1" name="post[]" />
+						<div class="locked-indicator"></div>
+					</th>
+					<td class="post-title page-title column-title">
+						<strong>
+							<a class="row-title" title="Edit “Hello world!”" href="">
+								Hello world!
+							</a>
+						</strong>
+						<div class="locked-info">
+							<span class="locked-avatar"></span>
+							<span class="locked-text"></span>
+						</div>
+						<!-- row actions -->
+						<div class="row-actions">
+							<span class="edit">
+								<a title="Edit this item" href="">Edit</a>
+								|
+							</span>
+							<span class="inline hide-if-no-js">
+								<a class="editinline" title="Edit this item inline" href="#">
+									Quick Edit
+								</a>
+								|
+							</span>
+							<span class="trash">
+								<a class="submitdelete" href="">
+									Trash
+								</a>
+								|
+							</span>
+							<span class="view">
+								<a rel="permalink" title="View “Hello world!”" href="">
+									View
+								</a>
+							</span>
+						</div>
+						<div id="inline_1" class="hidden">
+
+						</div>
+					</td>
+					<td class="author column-author">
+						<a href="">
+							changwoo
+						</a>
+					</td>
+					<td class="categories column-categories">
+						<a href="">
+							Uncategorized
+						</a>
+					</td>
+					<td class="tags column-tags">
+						--
+					</td>
+					<td class="comments column-comments">
+						<div class="post-com-count-wrapper">
+							<a class="post-com-count" title="0 pending" href=""">
+							<span class="comment-count">
+								1
+							</span>
+							</a>
+						</div>
+					</td>
+					<td class="date column-date">
+						<abbr title="2015/04/23 11:32:35 am">
+							2015/04/23
+						</abbr>
+						<br/>
+						Published
+					</td>
+				</tr>
+				<tr class="hidden">
+
+				</tr>
+			</tbody>
 
 			<!-- footer -->
 			<tfoot>
+				<tr>
+					<!-- checkbox: select all -->
+					<th id="cb" class="manage-column column-cb check-column" style="" scope="col">
+						<label class="screen-reader-text" for="cb-select-all-2">Select All</label>
+						<input id="cb-select-all-2" type="checkbox" />
+					</th>
 
+					<!-- title -->
+					<th id="title" class="manage-column column-title sortable desc" style="" scope="col">
+						<a href="">
+							<span>Title</span>
+							<span class="sorting-indicator"></span>
+						</a>
+					</th>
+
+					<!-- Author -->
+					<th id="author" class="manage-column column-author" style="" scope="col">
+						Author
+					</th>
+
+					<!-- Categories -->
+					<th id="categories" class="manage-column column-categories" style="" scope="col">
+						Categories
+					</th>
+
+					<!-- Tags -->
+					<th id="tags" class="manage-column column-tags" style="" scope="col">
+						Tags
+					</th>
+
+					<!-- Comments -->
+					<th id="comments" class="manage-column column-comments num sortable desc" style="" scope="col">
+						<a href="http://wordpress/wp-admin/edit.php?orderby=comment_count&order=asc">
+					            <span>
+					                <span class="vers comment-grey-bubble" title="Comments"></span>
+					            </span>
+							<span class="sorting-indicator"></span>
+						</a>
+					</th>
+
+					<!-- Date -->
+					<th id="date" class="manage-column column-date sortable asc" style="" scope="col">
+						<a href="http://wordpress/wp-admin/edit.php?orderby=date&order=desc">
+							<span>Date</span>
+							<span class="sorting-indicator"></span>
+						</a>
+					</th>
+				</tr>
 			</tfoot>
 
 		</table>
