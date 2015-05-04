@@ -1,2 +1,2 @@
-#.idea/
-#!.idea/dictionaries/*.xml
+.idea/
+!.idea/dictionaries/*.xml
