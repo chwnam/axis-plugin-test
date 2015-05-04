@@ -1,0 +1,1 @@
+<h1>This is a test plugin for Axis Framework</h1>
