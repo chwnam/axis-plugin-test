@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\bootstraps;
 
-use axis_framework\includes\bootstraps\Base_Plugin_Callback;
+use axis_framework\bootstraps\Base_Plugin_Callback;
 
 
 class Plugin_Callback extends Base_Plugin_Callback {
@@ -38,7 +38,7 @@ class Plugin_Callback extends Base_Plugin_Callback {
 
 	public function widgets_init_callback() {
 
-		require_once( AXIS_PLUGIN_TEST_ROOT . '/includes/widgets/class-test-widget.php' );
+		require_once( AXIS_PLUGIN_TEST_ROOT . '/widgets/class-test-widget.php' );
 		register_widget( '\axis_plugin_test\widgets\Test_Widget' );
 	}
 

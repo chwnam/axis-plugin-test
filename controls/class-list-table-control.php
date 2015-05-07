@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\controls;
 
-use axis_framework\includes\controls\Base_Control;
+use axis_framework\controls\Base_Control;
 
 
 class List_Table_Control extends Base_Control {

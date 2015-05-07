@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\views;
 
-use axis_framework\includes\views\Base_View;
+use axis_framework\views\Base_View;
 
 
 class List_Table_View extends Base_View {

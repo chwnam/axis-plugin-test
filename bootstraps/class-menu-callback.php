@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\bootstraps;
 
-use axis_framework\includes\bootstraps\Base_Menu_Callback;
+use axis_framework\bootstraps\Base_Menu_Callback;
 
 
 class Menu_Callback extends Base_Menu_Callback {

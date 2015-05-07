@@ -14,5 +14,7 @@ define( 'AXIS_ENABLE_DUMP_PRE', TRUE );
 /** @noinspection PhpIncludeInspection */
 require_once( AXIS_PLUGIN_TEST_ROOT . '/../axis-framework/axis-framework.php' );
 
-$bootstrap = new axis_framework\includes\bootstraps\Bootstrap();
-$bootstrap->auto_discover_and_run( 'axis_plugin_test\bootstraps', __FILE__ );
+$bootstrap = new axis_framework\bootstraps\Bootstrap();
+//$bootstrap->auto_discover_and_run( 'axis_plugin_test\bootstraps', __FILE__ );
+$bootstrap->initialize( 'axis_plugin_test\bootstraps', __FILE__ );
+$bootstrap->setup();
