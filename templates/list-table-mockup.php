@@ -1,15 +1,17 @@
+<!-- ------------------------------------------------------------------------
+NONONO!
+THIS IS JUST A MOCK-UP!!
+----------------------------------------------------------------------------- -->
 <div class="wrap">
 	<h2>
-		<?=$table_title?>
-		<a class="add-new-h2" href=""><?=$add_new_text?></a>
+		List Table Title (mock-up)
+		<a class="add-new-h2" href="">Add New</a>
 	</h2>
-
-	<!-- grouped by status -->
 	<ul class="subsubsub">
 		<li class="all">
 			<a class="current" href="">
-				<?=$text_all?>
-				<span class="count">(<?=$count_all?>)</span>
+				All
+				<span class="count">(9999)</span>
 			</a>
 			|
 		</li>
@@ -20,7 +22,6 @@
 			</a>
 		</li>
 	</ul>
-
 	<form id="post-filter" method="get">
 
 		<!-- search box -->
@@ -295,56 +296,6 @@
 				</tr>
 			</tfoot>
 
-		</table>
-
-		<table class="wp-list-table widefat fixed stripped">
-			<thead>
-				<tr>
-					<!-- checkbox: select all -->
-					<th id="cb" class="manage-column column-cb check-column" style="" scope="col">
-						<label class="screen-reader-text" for="cb-select-all-1">Select All</label>
-						<input id="cb-select-all-1" type="checkbox" />
-					</th>
-					<?php foreach( $table_headers as $table_header ) : ?>
-						<th id="<?=$table_header->id?>" class="" style="" scope="col">
-							<a href="">
-								<span><?=$table_header->name?></span>
-								<span class="sorting-indicator"></span>
-							</a>
-						</th>
-					<?php endforeach; ?>
-				</tr>
-			</thead>
-			<tbody>
-				<?php /* foreach( ... ) : */ ?>
-					<tr id="post-1" class="">
-						<th class="check-column" scope="row">
-							<label class="screen-reader-text" for="cb-select-1">
-								Select Hello world!
-							</label>
-							<input id="cb-select-1" type="checkbox" value="1" name="post[]" />
-							<div class="locked-indicator"></div>
-						</th>
-					</tr>
-				<?php /* endforeach; */ ?>
-			</tbody>
-			<tfoot>
-				<tr>
-					<!-- checkbox: select all -->
-					<th id="cb" class="manage-column column-cb check-column" style="" scope="col">
-						<label class="screen-reader-text" for="cb-select-all-2">Select All</label>
-						<input id="cb-select-all-2" type="checkbox" />
-					</th>
-					<?php foreach( $table_headers as $table_header ) : ?>
-						<th id="<?=$table_header->id?>" class="" style="" scope="col">
-							<a href="">
-								<span><?=$table_header->name?></span>
-								<span class="sorting-indicator"></span>
-							</a>
-						</th>
-					<?php endforeach; ?>
-				</tr>
-			</tfoot>
 		</table>
 	</form>
 </div>
