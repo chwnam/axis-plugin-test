@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\contexts;
 
-require_once( AXIS_CONTEXT_PATH . '/trait-plugin-callback.php' );
+require_once( AXIS_FRAMEWORK_PATH  . '/contexts/trait-plugin-callback.php' );
 
 use axis_framework\contexts\Base_Context;
 use axis_framework\contexts\Plugin_Callback_Trait;
