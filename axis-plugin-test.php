@@ -13,10 +13,8 @@ define( 'AXIS_ENABLE_DUMP_PRE', TRUE );
 define( 'AXIS_PLUGIN_TEST_MAIN', __FILE__ );
 
 /** @noinspection PhpIncludeInspection */
-require_once( AXIS_PLUGIN_TEST_ROOT . '/../axis-framework/axis-framework.php' );
+require_once( WP_PLUGIN_DIR . '/axis-framework/axis-framework.php' );
 
-// $bootstrap = new axis_framework\bootstraps\Bootstrap();
-// $bootstrap->auto_discover_and_run( 'axis_plugin_test\bootstraps', __FILE__ );
 $dispatch = new axis_framework\contexts\Dispatch();
 $dispatch->setup( __FILE__, 'axis_plugin_test\contexts' );
 

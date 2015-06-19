@@ -29,7 +29,7 @@ class Plugin_Context extends Base_Context {
 			'AxisPluginTest',
 			'manage_options',
 			'axis_plugin_test',
-			$this->control_helper( 'axis_plugin_test\controls', 'axis-plugin-test' )
+			$this->control_helper( 'axis_plugin_test\controls', 'axis-plugin-test', 'run' )
 		);
 
 		add_submenu_page(
@@ -38,7 +38,16 @@ class Plugin_Context extends Base_Context {
 			'ListTable',
 			'manage_options',
 			'axis_plugin_list_table',
-			$this->control_helper( 'axis_plugin_test\controls', 'list-table' )
+			$this->control_helper( 'axis_plugin_test\controls', 'list-table', 'run' )
 		);
+
+//		add_submenu_page(
+//			'axis_plugin_test',
+//			'Routing',
+//			'Routing',
+//			'manage_options',
+//			'axis_plugin_routing',
+//			$this->control_helper( 'axis_plugin_test\controls', '', 'run' )
+//		);
 	}
 }
