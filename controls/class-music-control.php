@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\controls;
 
-use axis_framework\controls\Base_Control;
+use axis_framework\control\Base_Control;
 
 
 class Music_Control extends Base_Control {
@@ -18,7 +18,7 @@ class Music_Control extends Base_Control {
 
 	public function play( $args ) {
 
-		\axis_framework\core\utils\axis_dump_pre( $args );
+		\axis_framework\core\util\axis_dump_pre( $args );
 	}
 
 	public function stop() {

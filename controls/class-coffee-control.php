@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\controls;
 
-use axis_framework\controls\Base_Control;
+use axis_framework\control\Base_Control;
 
 
 class Coffee_Control extends Base_Control {

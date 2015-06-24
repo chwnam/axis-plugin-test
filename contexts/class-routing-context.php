@@ -2,7 +2,7 @@
 
 namespace axis_plugin_test\contexts;
 
-use axis_framework\contexts\Base_Routing_Context;
+use axis_framework\context\Base_Routing_Context;
 
 class Routing_Context extends Base_Routing_Context {
 
@@ -25,6 +25,6 @@ class Routing_Context extends Base_Routing_Context {
 	}
 
 	public function template_redirect_callback() {
-		\axis_framework\core\utils\axis_dump_pre( $this->matched_query_vars );
+		\axis_framework\core\util\axis_dump_pre( $this->get_matched_query_vars() );
 	}
 }
