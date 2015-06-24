@@ -14,6 +14,6 @@ define( 'AXIS_PLUGIN_TEST_MAIN',  __FILE__ );
 /** @noinspection PhpIncludeInspection */
 require_once( WP_PLUGIN_DIR . '/axis-framework/axis-framework.php' );
 
-$dispatch = new axis_framework\contexts\Dispatch();
-$dispatch->setup( __FILE__, 'axis_plugin_test\contexts' );
+$dispatch = new axis_framework\context\Dispatch();
+$dispatch->setup( __FILE__, '\axis_plugin_test\context' );
 

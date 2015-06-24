@@ -36,7 +36,7 @@ class Test_Widget extends \WP_Widget {
 			'instance' => $instance
 		);
 
-		$this->loader->simple_view( 'simple/widgets/test-widget', $context );
+		$this->loader->simple_view( 'simple/widget/test-widget', $context );
 	}
 
 	public function update( $new_instance, $old_instance ) {

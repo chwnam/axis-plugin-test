@@ -1,11 +1,11 @@
 <?php
 
-namespace axis_plugin_test\contexts;
+namespace axis_plugin_test\context;
 
-require_once( AXIS_FRAMEWORK_PATH  . '/contexts/trait-plugin-callback.php' );
+require_once( AXIS_FRAMEWORK_PATH  . '/context/trait-plugin-callback.php' );
 
-use axis_framework\contexts\Base_Context;
-use axis_framework\contexts\Plugin_Callback_Trait;
+use axis_framework\context\Base_Context;
+use axis_framework\context\Plugin_Callback_Trait;
 
 
 class Plugin_Context extends Base_Context {
@@ -29,7 +29,7 @@ class Plugin_Context extends Base_Context {
 			'AxisPluginTest',
 			'manage_options',
 			'axis_plugin_test',
-			$this->control_helper( 'axis_plugin_test\controls', 'axis-plugin-test' )
+			$this->control_helper( 'axis_plugin_test\control', 'axis-plugin-test', 'run' )
 		);
 
 		add_submenu_page(
@@ -38,7 +38,7 @@ class Plugin_Context extends Base_Context {
 			'ListTable',
 			'manage_options',
 			'axis_plugin_list_table',
-			$this->control_helper( 'axis_plugin_test\controls', 'list-table' )
+			$this->control_helper( 'axis_plugin_test\control', 'list-table', 'run' )
 		);
 	}
 }

@@ -1,8 +1,8 @@
 <?php
 
-namespace axis_plugin_test\contexts;
+namespace axis_plugin_test\context;
 
-use axis_framework\contexts\Base_Context;
+use axis_framework\context\Base_Context;
 
 
 class Dashboard_Context extends Base_Context {
