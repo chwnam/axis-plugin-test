@@ -17,4 +17,8 @@ class Axis_Plugin_Test_Control extends Base_Control {
 		$form = $this->loader->form( 'axis_plugin_test\form', 'my' );
 		echo $view->render( 'simple/axis-plugin-test-template', array( 'form' => &$form ) );
 	}
+
+	public function admin_post() {
+		echo "that's nice!";
+	}
 }

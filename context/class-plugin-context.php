@@ -40,5 +40,14 @@ class Plugin_Context extends Base_Context {
 			'axis_plugin_list_table',
 			$this->control_helper( 'axis_plugin_test\control', 'list-table', 'run' )
 		);
+
+		add_submenu_page(
+			'axis_plugin_test',
+			'ModelTest',
+			'ModelTest',
+			'manage_options',
+			'apt_model_test',
+			$this->control_helper( 'apt\control', 'model-test', 'run' )
+		);
 	}
 }

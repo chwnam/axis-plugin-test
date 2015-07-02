@@ -3,70 +3,54 @@
 namespace axis_plugin_test\form;
 
 use axis_framework\form\Base_Form;
+use axis_framework\form\tag;
 
 
 class My_Form extends Base_Form {
 
 	public function __construct() {
+
 		parent::__construct( 'my-nonce-action', 'my-nonce-name' );
 	}
 
 	protected function build_structure() {
 
-		$structure = array(
-			'field_one'    => array(
-				'tag'   => 'input',
-				'type'  => 'text',
-				'id'    => 'field_one',
-				'name'  => 'field_one',
-				'class' => '',
-				'value' => get_option( 'blogdescription' )
-			),
+		static $structure = array(
 
-			'field_two'    => array(
-				'tag'   => 'input',
-				'type'  => 'text',
-				'id'    => 'field_two',
-				'name'  => 'field_two',
-				'class' => '',
-				'value' => 'static value',
-				'readonly' => 'readonly'
+			'name'    => 'my-form',
+			'comment' => 'My form',
+			'method'  => 'post',
+			'action'  => '',
+			'referer' => TRUE,
+			'echo'    => TRUE,
+			array(
+				'type'        => 'text',
+				'name'        => 'field_one',
+				'label'       => 'field one',
+				'description' => 'my field one',
+				'required'    => TRUE,
 			),
-
-			'div1' => array(
-				'tag'     => 'div',
-				'content' => array(
-					'tag' => 'select',
-					'name' => 'sel_name',
-					'content' => array(
-						array(
-							'tag'     => 'option',
-							'value'   => '1',
-							'content' => 1
-						),
-						array(
-							'tag'     => 'option',
-							'value'   => '2',
-							'content' => 2
-						),
-						array(
-							'tag'     => 'option',
-							'value'   => '3',
-							'content' => 3
-						)
-					)
-				)
+			array(
+				'type'  => 'hidden',
+				'name'  => 'action',
+				'value' => 'my-form',
 			),
-
-			'hr' => array(
-				'tag' => 'hr'
-			)
+			array(
+				'type'       => 'submit',
+				'attributes' => array(
+					'class' => 'button button-primary',
+				),
+			),
 		);
+
+		if( empty( $structure['action'] ) ) {
+			$structure['action'] = admin_url( 'admin-post.php' );
+		}
 
 		return $structure;
 	}
 
-	protected function validate() {
+	protected function validate( array &$data ) {
 
 	}
 }
